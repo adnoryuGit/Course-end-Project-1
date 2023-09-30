@@ -1,0 +1,16 @@
+Feature: Client Management
+
+  Background:
+    Given I am logged in as an administrator
+
+  Scenario: User creates a new client
+    When I navigate to the "Client Management" section
+    And I click on the "Add Client" button
+    And I fill in the following information:
+	| ID  	  | 1		|
+	| First Name  | John    |
+      | Last Name   | Doe     |
+      | Email       | john@example.com |
+    And I click the "Add Client" button
+    Then I should see a success message
+    And the client "John Doe" should be in the list of clients

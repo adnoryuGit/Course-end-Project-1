@@ -1,0 +1,29 @@
+{{message}}
+<body>
+    <div class="container">
+    <div>
+        <h2>Add Client</h2>
+    </div>
+    <form class="row g-3">
+        <div>
+            <label>ID:</label>
+            <input type="number" [(ngModel)]="c_id" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <div>
+            <label>First Name:</label>
+            <input type="text" [(ngModel)]="f_name" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <div>
+            <label>Last Name:</label>
+            <input type="text" [(ngModel)]="l_name" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <button (click)="addClient()">Add Client</button>
+        
+      </form>
+    </div>
+</body>
+    

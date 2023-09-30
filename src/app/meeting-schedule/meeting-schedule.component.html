@@ -1,0 +1,45 @@
+{{message}}
+<body>
+    <div class="container">
+    <div>
+        <h2>Schedule Meeting</h2>
+    </div>
+    <form class="row g-3">
+        <div>
+            <label>Meeting ID:</label>
+            <input type="number" [(ngModel)]="m_id" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <div>
+            <label>First Name:</label>
+            <input type="text" [(ngModel)]="f_name" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <div>
+            <label>Last Name:</label>
+            <input type="text" [(ngModel)]="l_name" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <div>
+            <label>Address:</label>
+            <input type="text" [(ngModel)]="address" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <div>
+            <label>Date:</label>
+            <input type="date" [(ngModel)]="date" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <div>
+            <label>City:</label>
+            <input type="text" [(ngModel)]="city" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <div>
+            <label>Time:</label>
+            <input type="time" [(ngModel)]="time" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <button (click)="addMeeting()">Add Meeting</button>
+        
+      </form>
+    </div>
+</body>
+    

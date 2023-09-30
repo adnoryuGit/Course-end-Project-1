@@ -1,0 +1,17 @@
+ Background:
+    Given I am logged in as an admin
+  Scenario: Schedule a meeting with a client
+    When I navigate to the "Client Managment" section
+    And I click on the "Schedule Meeting" button
+    And I fill in the meeting details:
+      | Id	        | 01	|
+      | First Name  | John    |
+      | Last Name   | Doe     |
+      | Email       | john@example.com |
+      | Address     | World Trade Center , Hall 1 , Dubai|
+      | Date	  | 01/10/2023|
+      | City        | Dubai 	|
+      | Time 	  | 09:30 PM|
+    And I click the "Add Meeting" button
+    Then I should see a success message
+    And the meeting should be in the list of scheduled meetings
