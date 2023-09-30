@@ -6,9 +6,6 @@
 <th>First Name</th>
 <th>Last Name</th>
 <th>Email</th>
-<th>Address</th>
-<th>Date</th>
-<th>City</th>
 <th>Delete</th>
 </tr>
 
@@ -18,9 +15,6 @@
 <td>{{client.f_name}}</td>
 <td>{{client.l_name}}</td>
 <td>{{client.email}}</td>
-<td>{{client.address}}</td>
-<td>{{client.date|date:'dd/MM/yy'}}</td>
-<td>{{client.city}}</td>
 <td><button (click)="deleteClient(client.c_id)">Delete</button></td>  
 </tr>
 </table>
